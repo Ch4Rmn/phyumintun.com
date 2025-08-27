@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'About Page')
+@section('title', 'Home Page')
 
 @push('meta')
 <meta name="keyword" content="Myanmar Cement Business,Limestone Deposit Investment">

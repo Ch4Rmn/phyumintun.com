@@ -16,6 +16,13 @@
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon/favicon-96x96.png') }}" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="{{ asset('assets/images/favicon/favicon.svg')}}" />
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon/favicon.ico')}}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/images/favicon/apple-touch-icon.png')}}" />
+    <meta name="apple-mobile-web-app-title" content="Phyumintun" />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{{ asset('assets/custom-font/fonts.css') }}" />
     <!-- Bootstrap -->
@@ -68,12 +75,11 @@
             <div class="container">
                 <ul class="list-inline info">
                     <li>
-                        <a href="#"><span class="fa fa-phone"></span> 1234 - 5678 -
-                            9012</a>
+                        <a href="#"><span class="fa fa-phone"></span> 01-579843 , 09-5175867 , 09-5010872</a>
                     </li>
                     <li>
                         <a href="#"><span class="fa fa-envelope"></span>
-                            support@Construct.com</a>
+                            theinhtoon@tunthwinmining.com</a>
                     </li>
                     <li>
                         <a href="#"><span class="fa fa-clock-o"></span> Mon - Sat
@@ -163,12 +169,12 @@
                 <!-- Navigation -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav menu">
-                        <li><a href="">{{ __('messages.home') }}</a></li>
-                        <li><a href="#about">{{ __('messages.about') }}</a></li>
-                        <li><a href="#services">{{ __('messages.services') }}</a></li>
-                        <li><a href="#portfolio">Buildings</a></li>
-                        <li><a href="#contact_form">Awards</a></li>
-                        <li><a href="#contact_form">{{ __('messages.contact') }}</a></li>
+                        <li><a href="/">{{ __('messages.home') }}</a></li>
+                        <li><a href="{{ route('about') }}">{{ __('messages.about') }}</a></li>
+                        <li><a href="{{ route('service') }}">{{ __('messages.services') }}</a></li>
+                        <li><a href="{{ route('building.index') }}">Buildings</a></li>
+                        <li><a href="{{ route('awards')}}">Awards</a></li>
+                        <li><a href="{{ route(name: 'contact')}}">{{ __('messages.contact') }}</a></li>
                     </ul>
                 </div>
             </div>

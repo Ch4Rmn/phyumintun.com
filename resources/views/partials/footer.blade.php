@@ -109,16 +109,17 @@
                     <ul class="list-unstyled footer_contact">
                         <li>
                             <a href=""><span class="fa fa-map-marker"></span>
-                                124 New Line, London UK</a>
+                                23/B/2, Thukha Waddy St., Ward (6), Yankin Township, Yangon , Myanmar</a>
                         </li>
                         <li>
                             <a href=""><span class="fa fa-envelope"></span>
-                                hello@psdfreebies.com</a>
+                                theinhtoon@tunthwinmining.com</a>
                         </li>
                         <li>
                             <a href=""><span class="fa fa-mobile"></span>
                                 <p>
-                                    +44 00 00 1234 <br />+44 00 00 1234
+                                    01-579843 <br />09-5175867 <br>
+                                    09-5010872
                                 </p>
                             </a>
                         </li>
@@ -133,7 +134,7 @@
     <div class="footer_bottom text-center">
         <p class="wow fadeInRight">
             Made with
-            <i class="fa fa-heart"></i>
+            <a target="_blank" href="https://dpsmap.com/">dpsmap.com</a>
             by
             <a target="_blank" href="linhtutkyaw">linhtutkyaw</a>
             2025. All Rights Reserved
