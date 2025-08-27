@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
+
 <!--<![endif]-->
 
 <head>
@@ -80,7 +81,23 @@
                     </li>
                 </ul>
                 <ul class="list-inline social_icon">
-                    <li>
+                    <!-- <li>
+                        <select name="language" id="language-select" class="form-select">
+                            <option value="en">Eng</option>
+                            <option value="mm">Mm</option>
+                        </select>
+                    </li> -->
+                    <!-- Language Switcher -->
+                    <li class="nav-item">
+                        <form method="GET" action="{{ route('lang.switch') }}" class="d-flex align-items-center">
+                            <select name="locale" class="form-select form-select-sm" onchange="this.form.submit()">
+                                <option value="en" {{ app()->getLocale() == 'en' ? 'selected' : '' }}>English</option>
+                                <option value="mm" {{ app()->getLocale() == 'mm' ? 'selected' : '' }}>မြန်မာ</option>
+                            </select>
+                        </form>
+                    </li>
+
+                    <li class="ms-2">
                         <a href=""><span class="fa fa-facebook"></span></a>
                     </li>
                     <li>
@@ -146,11 +163,12 @@
                 <!-- Navigation -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav menu">
-                        <li><a href="">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact_form">Contact Us</a></li>
+                        <li><a href="">{{ __('messages.home') }}</a></li>
+                        <li><a href="#about">{{ __('messages.about') }}</a></li>
+                        <li><a href="#services">{{ __('messages.services') }}</a></li>
+                        <li><a href="#portfolio">Buildings</a></li>
+                        <li><a href="#contact_form">Awards</a></li>
+                        <li><a href="#contact_form">{{ __('messages.contact') }}</a></li>
                     </ul>
                 </div>
             </div>

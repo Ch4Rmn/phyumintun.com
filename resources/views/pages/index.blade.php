@@ -53,7 +53,7 @@
         <!-- Carousel-inner -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="{{ asset('assets/images/slider_img1.jpg') }}" alt="Construction" />
+                <img src="{{ asset('assets/images/body_back.jpg') }}" alt="Construction" />
                 <div class="overlay">
                     <div class="carousel-caption">
                         <h3>We are Certified</h3>
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="item">
-                <img src="{{ asset('assets/images/slider_img2.jpg') }}" alt="Construction" />
+                <img src="{{ asset('assets/images/slider_img1.jpg') }}" alt="Construction" />
                 <div class="overlay">
                     <div class="carousel-caption">
                         <h3>We are Certified</h3>
@@ -162,7 +162,7 @@
         <div class="row">
             <div class="col-lg-7 col-md-6">
                 <div class="about_content">
-                    <h2>Welcome to Our Company</h2>
+                    <h2>{{ __('messages.Welcome to Our Company') }}</h2>
                     <h3>Company Overview</h3>
                     <p>
                         Nemo enim ipsam voluptatem quia voluptas sit
@@ -345,102 +345,93 @@
 <!-- Testimonial -->
 <section id="testimonial">
     <div class="container text-center testimonial_area">
-        <h2>News & Updates</h2>
-        <ul>
-            <li>New partnership announcements</li>
-            <li>Cement market trends</li>
-            <li>Milestones of PMT</li>
-
-        </ul>
-
-        <!-- <div class="row">
-            <div class="col-md-4">
-                <div class="testimonial_item">
-                    <div class="testimonial_content text-left">
-                        <p>
-                            Nemo enim ipsam voluptatem quia voluptas sit
-                            aspernatur aut odit aut fugit, sed quia
-                            consequuntur magni dolores eos qui ratione
-                            voluptatem sequi nesciunt. Neque porro
-                            quisquam est, qui dolorem ipsum quia dolor
-                            sit amet, consectetur, adipisci velit,
-                        </p>
-                    </div>
-                    <img src="{{ asset('assets/images/testimonial_img1.png') }}" alt="Testimonial" />
-                    <p class="worker_name">john smith</p>
-                </div>
+        <h2>Lastest News & Updates</h2>
+        <div class="row" id="news">
+            <!-- Announcement Section -->
+            <div class="col-md-3 mb-4" id="annouence">
+                <img class="img-thumbnail w-100" src="{{ asset('assets/images/news.jpg') }}" style="object-fit:cover; border:0; height:200px;" alt="">
+                <h4 id="news" class="mt-3 " style="text-align: start;">annouence updates</h4>
+                <p id="news" class="" style="text-align: start;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat alias eveniet temporibus ex, exercitationem dolorum impedit, rerum eligendi sint quos deleniti dolorem incidunt aspernatur optio ullam natus voluptate. Vel, voluptatibus?
+                </p>
+                {{-- <span>created_at</span> --}}
+                {{-- <br> --}}
+                {{-- <h4 id="news" class="mt-3 " style="text-align: start;">Header</h4> --}}
+                <p id="news" class="" style="text-align: start;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat alias eveniet temporibus ex, exercitationem dolorum impedit, rerum eligendi sint quos deleniti dolorem incidunt aspernatur optio ullam natus voluptate. Vel, voluptatibus?
+                </p>
+                <span>created_at</span>
+                <br>
+                <span class="text-muted">admin</span>
             </div>
-            <div class="col-md-4">
-                <div class="testimonial_item">
-                    <div class="testimonial_content">
-                        <p>
-                            Nemo enim ipsam voluptatem quia voluptas sit
-                            aspernatur aut odit aut fugit, sed quia
-                            consequuntur magni dolores eos qui ratione
-                            voluptatem sequi nesciunt. Neque porro
-                            quisquam est, qui dolorem ipsum quia dolor
-                            sit amet, consectetur, adipisci velit,
+            <!-- News Section -->
+            <div class="col-md-9" id="news">
+                <div class="row">
+                    @for ($i = 0; $i < 6; $i++)
+                        <div class="col-md-4 mb-4">
+                        <img class="img-thumbnail w-100" src="{{ asset('assets/images/news.jpg') }}" style="object-fit:cover; border:0; height:150px;" alt="">
+                        <h4 id="news" class="mt-2 " style="text-align: start;">Header</h4>
+                        <p id="news" class="" style="text-align: start;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat alias eveniet temporibus ex, exercitationem dolorum impedit, rerum eligendi sint quos deleniti dolorem incidunt aspernatur optio ullam natus voluptate. Vel, voluptatibus?
                         </p>
-                    </div>
-                    <img src="{{ asset('assets/images/testimonial_img2.png') }}" alt="Testimonial" />
-                    <p class="worker_name">john smith</p>
+                        <span>created_at</span>
+                        <span class="text-muted">admin</span>
                 </div>
+                @endfor
             </div>
-            <div class="col-md-4">
-                <div class="testimonial_item">
-                    <div class="testimonial_content">
-                        <p>
-                            Nemo enim ipsam voluptatem quia voluptas sit
-                            aspernatur aut odit aut fugit, sed quia
-                            consequuntur magni dolores eos qui ratione
-                            voluptatem sequi nesciunt. Neque porro
-                            quisquam est, qui dolorem ipsum quia dolor
-                            sit amet, consectetur, adipisci velit,
-                        </p>
-                    </div>
-                    <img src="{{ asset('assets/images/testimonial_img1.png') }}" alt="Testimonial" />
-                    <p class="worker_name">john smith</p>
-                </div>
-            </div>
-        </div> -->
+        </div>
     </div>
+    </div>
+
+
+
 </section>
 <!-- Testimonial end -->
-
+<hr>
 <!-- Contact form -->
 <section id="contact_form">
     <div class="container">
+        <h2 style="text-align: center;margin-bottom: 30px;color:#484848">Contact Us
+        </h2>
         <div class="row">
-            <div class="col-md-6">
-                <h2>Do you have any questions?</h2>
-                <h2 class="second_heading">Feel free to contact us!</h2>
+            <div class="col-md-5 col-sm-5 col-lg-5 " style="margin-top:60px !important;background:#2312;padding:20px;box-shadow: 1px 2px black;border-radius: 20px;">
+                <div>
+                    <h3 style="color:white;text-shadow:1px 1px black">Head Office</h3>
+                    <!-- <h4>Phone</h4> -->
+                    <a></a>
+
+                    <br>
+
+                    <p style="color:white;text-shadow:1px 1px black">Phone -
+                        01-579843
+                        ,
+                        09-5175867
+                        ,
+                        09-5010872</p>
+                    <a></a>
+
+                    <br>
+                    <p style="color:white;text-shadow:1px 1px black">Email -
+                        theinhtoon@tunthwinmining.com</p>
+                    <a></a>
+
+                    <br>
+                    <p style="color:white;text-shadow:1px 1px black">Address - 23/B/2, Thukha Waddy St., Ward (6), Yankin Township, Yangon , Myanmar</h>
+                        <a></a>
+
+                        <br>
+                </div>
+                <a href="mailto:theinhtoon@tunthwinmining.com" class="btn btn-warning" style="margin-top:30px;border-radius:20px;box-shadow: 1px 1px black;">Send Messsage</a>
+
+
             </div>
-            <form role="form" class="form-inline text-right col-md-6">
-                <div class="form-group">
-                    <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        placeholder="Name" />
-                </div>
-                <div class="form-group">
-                    <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="Email" />
-                </div>
-                <div class="form-group">
-                    <textarea
-                        class="form-control"
-                        rows="5"
-                        id="msg"
-                        placeholder="Message"></textarea>
-                </div>
-                <button type="submit" class="btn submit_btn">
-                    Submit
-                </button>
-            </form>
+            <br>
+            <!-- <div></div> -->
+            <div class="col-md-offset-1 col-md-4 col-sm-4 col-lg-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109447.76866045083!2d96.10150104314722!3d16.87859437458004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193565ea5be7d%3A0xc55abb7461764408!2sPwc!5e1!3m2!1sen!2smm!4v1756220400550!5m2!1sen!2smm" width="480" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
         </div>
     </div>
 </section>

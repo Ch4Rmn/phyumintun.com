@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Http\Request;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +24,20 @@ Route::get('/', function () {
 Route::get('building', function () {
     return view('pages.pofolio');
 });
+
+// Route::get('/lang/{locale}', function ($locale) {
+//     if (in_array($locale, ['en', 'my'])) {
+//         Session::put('locale', $locale);
+//         App::setLocale($locale);
+//     }
+//     return redirect()->back();
+// })->name('lang.switch');
+
+Route::get('/lang', function (Request $request) {
+    $locale = $request->input('locale'); // en / mm
+    if (in_array($locale, ['en', 'mm'])) {
+        Session::put('locale', $locale);
+        App::setLocale($locale);
+    }
+    return redirect()->back();
+})->name('lang.switch');

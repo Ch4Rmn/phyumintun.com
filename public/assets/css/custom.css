@@ -195,7 +195,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 .home .carousel {
     position: relative;
     height: 700px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 .home .carousel .item img{
     width:100%;
@@ -528,9 +528,27 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 
 /* Contact form */
 #contact_form {
-    background: #fedb5d none repeat scroll 0 0;
-    padding:27px 0 32px;
+    position: relative;
+    padding: 45px 0px;
+    overflow: hidden;
 }
+
+#contact_form::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('../images/body_back.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px); /* Adjust blur as needed */
+    z-index: 0;
+}
+
+#contact_form > * {
+    position: relative;
+    z-index: 1;
+}
+
 #contact_form h2 {
     margin: 20px 0 0;
     color:#73757e;
@@ -581,7 +599,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 
 /* Footer */
 footer {
-    background: url(../images/footer_bg.jpg)no-repeat;
+    background: url(../images/body_back.jpg)no-repeat;
     background-size:cover;
     position:relative;
     padding-top:45px;
@@ -791,6 +809,10 @@ footer::after {
     }
     nav.navbar.bootsnav .navbar-toggle {
         margin-top: 32px;
+                /* margin-left: 15px; */
+        width: 39px;
+        height: 44px;
+        margin-top: 19px;
     }
     .attr-nav {
         right: 25px;
@@ -846,7 +868,10 @@ footer::after {
         text-align: right;
     }
     nav.navbar.bootsnav .navbar-toggle {
-        margin-left: 15px;
+               margin-left: 15px;
+        width: 39px;
+        height: 44px;
+        margin-top: 19px;
     }
     .carousel-caption {
         top: 20px;
