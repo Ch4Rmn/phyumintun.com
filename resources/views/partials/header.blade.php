@@ -75,10 +75,11 @@
             <div class="container">
                 <ul class="list-inline info">
                     <li>
-                        <a href="#"><span class="fa fa-phone"></span> 01-579843 , 09-5175867 , 09-5010872</a>
+
+                        <a href="#"><span class="fa fa-phone"></span> <a href="tel:+959 500 6225">+959 500 6225</a>, <a href="tel:+">+959 517 5867</a></a>
                     </li>
                     <li>
-                        <a href="#"><span class="fa fa-envelope"></span>
+                        <a href="mailto:theinhtoon@tunthwinmining.com"><span class="fa fa-envelope"></span>
                             theinhtoon@tunthwinmining.com</a>
                     </li>
                     <li>

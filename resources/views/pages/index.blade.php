@@ -74,7 +74,8 @@
                 </div>
             </div>
             <div class="item">
-                <img src="{{ asset('assets/images/slider_img1.jpg') }}" alt="Construction" />
+
+                <img src="{{ asset('assets/images/cover.png') }}" alt="Construction" />
                 <div class="overlay">
                     <div class="carousel-caption">
                         <h3>We are Certified</h3>
@@ -95,7 +96,10 @@
                 </div>
             </div>
             <div class="item">
-                <img src="{{ asset('assets/images/slider_img3.jpg') }}" alt="Construction" />
+                {{-- <img src="{{ asset('assets/images/slider_img3.jpg') }}" alt="Construction" /> --}}
+                <img src="{{ asset('assets/images/slider_img1.jpg') }}" alt="Construction" />
+
+
                 <div class="overlay">
                     <div class="carousel-caption">
                         <h3>We are Certified</h3>
@@ -180,7 +184,7 @@
                         laboriosam, nisi ut aliquid ex ea commodi
                         consequatur?
                     </p>
-                    <a class="btn know_btn">know more</a>
+                    <a class="btn know_btn" href="{{route('about')}}">know more</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-lg-offset-1">
@@ -200,6 +204,14 @@
             <div class="col-md-12">
                 <div class="head_title">
                     <h2 style="line-height: 50px;">Phyu Min Tun (PMT) သည် မြန်မာနိုင်ငံ၏ အကြီးဆုံး Limestone Deposits ကို ပိုင်ဆိုင်ထားသော Cement Business Company</h2>
+
+                    <div class="row">
+                        <div class="col-3 col-md-3 img-thumbnail"><img src="{{asset('assets/images/gem1.png')}}" alt="" srcset=""></div>
+                        <div class="col-3 col-md-3 img-thumbnail"><img src="{{asset('assets/images/gem2.png')}}" alt="" srcset=""></div>
+                        <div class="col-3 col-md-3 img-thumbnail"><img src="{{asset('assets/images/gem3.png')}}" alt="" srcset=""></div>
+                        <div class="col-3 col-md-3 img-thumbnail"><img src="{{asset('assets/images/gem4.png')}}" alt="" srcset=""></div>
+                    </div>
+
                     <p>
                         Nemo enim ipsam voluptatem quia voluptas sit
                         aspernatur aut odit aut fugit, sed quia
@@ -211,8 +223,11 @@
                 </div>
             </div>
         </div>
-        <div class="row" style="margin-top: 30px;">
+        <div class="row" style="">
+            <h2 style="">Why Choose Us</h2>
+            <br>
             <div class="col-md-3 col-sm-6">
+
                 <!-- <div class="why_us_item"> -->
                 <!-- <span class="fa fa-leaf"></span> -->
                 <h4>Mission</h4>
@@ -403,20 +418,16 @@
                     <br>
 
                     <p style="color:white;text-shadow:1px 1px black">Phone -
-                        01-579843
-                        ,
-                        09-5175867
-                        ,
-                        09-5010872</p>
+                       <a href="tel:+959 500 6225" style="color:white;text-shadow:1px 1px rgb(0, 0, 0)">+959 500 6225</a>, <a href="tel:++959 517 5867" style="color:rgb(255, 255, 255);text-shadow:1px 1px rgb(0, 0, 0)">+959 517 5867</a></p>
                     <a></a>
 
                     <br>
                     <p style="color:white;text-shadow:1px 1px black">Email -
-                        theinhtoon@tunthwinmining.com</p>
+                        <a href="mailto:theinhtoon@tunthwinmining.com"  style="color:rgb(255, 255, 255);text-shadow:1px 1px rgb(0, 0, 0)">theinhtoon@tunthwinmining.com</a></p>
                     <a></a>
 
                     <br>
-                    <p style="color:white;text-shadow:1px 1px black">Address - 23/B/2, Thukha Waddy St., Ward (6), Yankin Township, Yangon , Myanmar</h>
+                    <p style="color:white;text-shadow:1px 1px black">Address - No.23, B/2, Sunirum Park, Thukhawaddi  Street, Yankin Tsp, Yangon Myanmar</h>
                         <a></a>
 
                         <br>

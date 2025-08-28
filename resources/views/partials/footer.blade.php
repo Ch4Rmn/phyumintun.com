@@ -41,7 +41,7 @@
                 <div class="footer_item">
                     <h4>Explore link</h4>
                     <ul class="list-unstyled footer_menu">
-                        <li>
+                        {{-- <li>
                             <a href=""><span class="fa fa-play"></span> Our
                                 services</a>
                         </li>
@@ -68,6 +68,37 @@
                         <li>
                             <a href=""><span class="fa fa-play"></span> Cekas
                                 terms</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="fa fa-play"></span> Site
+                                map</a>
+                        </li> --}}
+                         <li>
+                            <a href=""><span class="fa fa-play"></span> Home</a>
+                        </li>
+                         <li>
+                            <a href=""><span class="fa fa-play"></span> Our
+                                services</a>
+                        </li>
+
+                        <li>
+                            <a href=""><span class="fa fa-play"></span>
+                                About Us</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="fa fa-play"></span> Help
+                                center</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="fa fa-play"></span>
+                                Service</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="fa fa-play"></span>
+                                Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="fa fa-play"></span> Content Us</a>
                         </li>
                         <li>
                             <a href=""><span class="fa fa-play"></span> Site
@@ -109,17 +140,19 @@
                     <ul class="list-unstyled footer_contact">
                         <li>
                             <a href=""><span class="fa fa-map-marker"></span>
-                                23/B/2, Thukha Waddy St., Ward (6), Yankin Township, Yangon , Myanmar</a>
+                                No.23, B/2, Sunirum Park, Thukhawaddi  Street, Yankin Tsp, Yangon Myanmar
+                                {{-- 23/B/2, Thukha Waddy St., Ward (6), Yankin Township, Yangon , Myanmar --}}
+                            </a>
                         </li>
                         <li>
-                            <a href=""><span class="fa fa-envelope"></span>
+                            <a href="mailto:theinhtoon@tunthwinmining.com" ><span class="fa fa-envelope"></span>
                                 theinhtoon@tunthwinmining.com</a>
                         </li>
                         <li>
                             <a href=""><span class="fa fa-mobile"></span>
                                 <p>
-                                    01-579843 <br />09-5175867 <br>
-                                    09-5010872
+                                    <a href="tel:+959 500 6225">+959 500 6225</a> <br /><a href="tel:+">+959 517 5867</a> <br>
+                                    {{-- 09-5010872 --}}
                                 </p>
                             </a>
                         </li>
