@@ -159,6 +159,14 @@
 <script src="{{ asset('assets/js/jquery.scrollUp.min.js') }}"></script>
 
 <script src="{{ asset('assets/js/main.js') }}"></script>
+<script>
+    window.addEventListener('load', function() {
+        var loading = document.getElementById('loading');
+        if (loading) {
+            loading.style.display = 'none';
+        }
+    });
+</script>
 </body>
 
 </html>
