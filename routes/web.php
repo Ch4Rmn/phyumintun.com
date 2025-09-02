@@ -1,10 +1,12 @@
 <?php
 
+use App\Models\Announcement;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 use App\Http\Controllers\BuildingController;
+use App\Http\Controllers\AnnouncementController;
 
 
 /*
@@ -19,7 +21,9 @@ use App\Http\Controllers\BuildingController;
 */
 
 Route::get('/', function () {
-    return view('pages.index');
+    $announcement = Announcement::latest()->first();
+
+    return view('pages.index', compact('announcement'));
 });
 
 Route::get('building', function () {
@@ -59,3 +63,10 @@ Route::get('/awards', function () {
 Route::get('/contact', function () {
     return view(view: 'pages.contact');
 })->name('contact');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+//
+Route::get('showLatestPost', [AnnouncementController::class, 'showLatestPost'])->name('showLatestPost');

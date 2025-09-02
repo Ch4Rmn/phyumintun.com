@@ -359,25 +359,26 @@
 
 <!-- Testimonial -->
 <section id="testimonial">
-    <div class="container text-center testimonial_area">
+    <div class="container text-start testimonial_area">
         <h2>Lastest News & Updates</h2>
         <div class="row" id="news">
             <!-- Announcement Section -->
             <div class="col-md-3 mb-4" id="annouence">
-                <img class="img-thumbnail w-100" src="{{ asset('assets/images/news.jpg') }}" style="object-fit:cover; border:0; height:200px;" alt="">
-                <h4 id="news" class="mt-3 " style="text-align: start;">annouence updates</h4>
+                @if ($announcement)
+                <img class="img-thumbnail w-100" src="{{ Voyager::image($announcement['image']) }}" style="object-fit:cover; border:0; height:200px;" alt="">
+                <h4 id="news" class="mt-3 " style="text-align: start;">{{ $announcement['title'] }}</h4>
                 <p id="news" class="" style="text-align: start;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat alias eveniet temporibus ex, exercitationem dolorum impedit, rerum eligendi sint quos deleniti dolorem incidunt aspernatur optio ullam natus voluptate. Vel, voluptatibus?
+                    {{ $announcement['body'] }}
                 </p>
-                {{-- <span>created_at</span> --}}
+
+                <span >{{ $announcement['created_at']->format('Y-m-d H:i:s') }}</span>
                 {{-- <br> --}}
                 {{-- <h4 id="news" class="mt-3 " style="text-align: start;">Header</h4> --}}
-                <p id="news" class="" style="text-align: start;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat alias eveniet temporibus ex, exercitationem dolorum impedit, rerum eligendi sint quos deleniti dolorem incidunt aspernatur optio ullam natus voluptate. Vel, voluptatibus?
-                </p>
-                <span>created_at</span>
+
                 <br>
-                <span class="text-muted">admin</span>
+                <span  class="text-muted">admin</span>
+                @endif
+
             </div>
             <!-- News Section -->
             <div class="col-md-9" id="news">
@@ -418,16 +419,18 @@
                     <br>
 
                     <p style="color:white;text-shadow:1px 1px black">Phone -
-                       <a href="tel:+959 500 6225" style="color:white;text-shadow:1px 1px rgb(0, 0, 0)">+959 500 6225</a>, <a href="tel:++959 517 5867" style="color:rgb(255, 255, 255);text-shadow:1px 1px rgb(0, 0, 0)">+959 517 5867</a></p>
+                        <a href="tel:+959 500 6225" style="color:white;text-shadow:1px 1px rgb(0, 0, 0)">+959 500 6225</a>, <a href="tel:++959 517 5867" style="color:rgb(255, 255, 255);text-shadow:1px 1px rgb(0, 0, 0)">+959 517 5867</a>
+                    </p>
                     <a></a>
 
                     <br>
                     <p style="color:white;text-shadow:1px 1px black">Email -
-                        <a href="mailto:theinhtoon@tunthwinmining.com"  style="color:rgb(255, 255, 255);text-shadow:1px 1px rgb(0, 0, 0)">theinhtoon@tunthwinmining.com</a></p>
+                        <a href="mailto:theinhtoon@tunthwinmining.com" style="color:rgb(255, 255, 255);text-shadow:1px 1px rgb(0, 0, 0)">theinhtoon@tunthwinmining.com</a>
+                    </p>
                     <a></a>
 
                     <br>
-                    <p style="color:white;text-shadow:1px 1px black">Address - No.23, B/2, Sunirum Park, Thukhawaddi  Street, Yankin Tsp, Yangon Myanmar</h>
+                    <p style="color:white;text-shadow:1px 1px black">Address - No.23, B/2, Sunirum Park, Thukhawaddi Street, Yankin Tsp, Yangon Myanmar</h>
                         <a></a>
 
                         <br>
